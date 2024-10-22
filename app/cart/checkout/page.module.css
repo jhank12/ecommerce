@@ -1,0 +1,245 @@
+.backToCartLink {
+  color: var(--purple);
+}
+
+.backToCartLink:hover {
+  color: var(--purple-hover);
+}
+
+.backToCartLink p {
+  margin-bottom: 1.5rem;
+}
+
+.checkoutFormSummary {
+  display: flex;
+  gap: 1.75rem;
+
+  margin-top: 2.5rem;
+}
+
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 1.25rem 0;
+}
+
+.formSection:first-of-type {
+  padding-top: 0;
+}
+
+.formSection:last-of-type {
+  padding-bottom: 0;
+}
+
+.formSection h4 {
+  color: var(--primary-font);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.inputsRow {
+  display: flex;
+  gap: 2rem;
+}
+
+.inputsRow .labelInputWrap {
+  flex: 1;
+}
+
+.labelInputWrap {
+  gap: 6px;
+  flex-direction: column;
+  display: flex;
+}
+
+.labelInputWrap label {
+  font-size: 0.9rem;
+}
+
+.deliveryCards {
+  display: flex;
+  gap: 1rem;
+}
+
+.deliveryCard {
+  border: 1px solid #e7ecf3;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.deliveryCardActive {
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.deliveryType,
+.deliveryPrice {
+  font-weight: 500;
+}
+
+.shippingTime {
+  color: var(--secondary-font);
+  font-size: 0.95rem;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+.orderSummary {
+  border: 1px solid #e7ecf3;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.orderSummary h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.orderItems {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.orderItem {
+  border-bottom: 1px dashed #e7ecf3;
+  display: flex;
+  gap: 1.15rem;
+  padding: 1.75rem 0;
+}
+
+.orderItem:last-of-type {
+  border: none;
+}
+
+.itemInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.itemInfo div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.itemInfo p {
+  color: var(--secondary-font);
+  font-size: 0.85rem;
+}
+
+.itemName {
+  color: var(--primary-font) !important;
+  font-size: 1.1rem !important;
+}
+
+.itemPrice {
+  color: var(--primary-font);
+  font-weight: 700;
+  font-size: 1rem !important;
+}
+
+.summaryPrices {
+  border-top: 1px solid #e7ecf3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.priceBreakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.priceBreakdownRow {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceBreakdownRow p:first-of-type {
+  color: var(--tertiary-font);
+  font-size: 0.85rem;
+}
+
+.priceBreakdownRow p:last-of-type {
+  font-weight: 600;
+}
+
+.totalPrice {
+  align-items: flex-start;
+  border-top: 1px solid #e7ecf3;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.totalPrice p {
+  color: var(--primary-font);
+}
+
+.totalPrice p:first-of-type {
+  color: var(--primary-font);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.totalPrice p:last-of-type {
+  color: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.orderSummary button {
+  height: 45px;
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .checkoutFormSummary {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputsRow {
+    flex-direction: column;
+  }
+
+  .orderItems {
+    max-height: 350px;
+  }
+}

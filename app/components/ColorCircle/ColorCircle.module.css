@@ -1,0 +1,8 @@
+.productColorCircle {
+    
+}
+
+
+.circleActive {
+    border: 1.5px solid var(--purple) !important;
+}

@@ -1,0 +1,31 @@
+.circleContainer, .circleContainerActive {
+    cursor: pointer;
+
+}
+
+.circleContainer {
+    border: 1px solid transparent;
+
+}
+
+.circleContainerActive {
+    border: 1px solid var(--purple);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circleContainer i, .circleContainerActive i {
+    font-size: 1.5rem;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.circleContainer i {
+    color: transparent;
+}
+
+.circleContainerActive i {
+    color: var(--white);
+}

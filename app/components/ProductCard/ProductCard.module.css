@@ -1,0 +1,51 @@
+
+.productCard {
+    position: relative;
+}
+
+.productCard img {
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.productDetails {
+    margin-top: 1rem;
+}
+
+.productColor {
+    color: var(--tertiary-font);
+    font-size: .85rem;
+}
+
+.productName {
+    color: var(--primary-font);
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-top: .3rem;
+}
+
+.productPrice {
+    color: var(--tertiary-font);
+    font-size: 1.05rem;
+    margin: .95rem 0;
+}
+
+.productColorsContainer {
+    display: flex;
+    gap: .75rem;
+}
+
+.productColorCircle {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+/* mobile */
+@media (max-width: 430px) {
+    .productCard img {
+        aspect-ratio: 15/10;
+        object-fit: cover;
+    }
+}

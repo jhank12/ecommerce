@@ -1,0 +1,17 @@
+.iconContainer {
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    /* border: 1.5px solid var(--disabled); */
+    box-shadow: 0 2px 5px rgba(0,0,0, .15);
+
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 50px;
+ }
+
+ .iconContainer i {
+    color: var(--purple);
+    font-size: 1.5rem;
+ }

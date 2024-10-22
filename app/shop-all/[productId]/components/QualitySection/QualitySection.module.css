@@ -1,0 +1,94 @@
+.qualitySectionParagraph {
+    color: var(--secondary-font);
+    margin-top: 1.1rem;
+}
+
+.tabs {
+    margin-top: 3rem;
+}
+
+.tabs ul {
+    border-bottom: 1px solid #dee2e9;
+    display: flex;
+}
+
+.tabs ul li {
+    border-bottom: 1px solid transparent;
+
+    color: var(--secondary-font);
+    cursor: pointer;
+    padding: 1rem 1.1rem;
+}
+
+.tabs ul li:hover {
+    color: var(--purple);
+    border-bottom: 1px solid var(--purple);
+}
+
+.activeTab {
+    border-bottom: 1px solid var(--purple) !important;
+    color: var(--purple) !important;
+}
+
+.tabContent {
+    display: flex;
+    gap: 1.75rem;
+    margin-top: 1.4rem;
+}
+
+.imgTestDiv {
+    flex: .5;
+}
+
+.tabContentText {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    flex: 1.5;
+}
+
+.tabContentText h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.tabContentTextDesc {
+    color: var(--secondary-font)/Users/joshuahankins/Desktop/Web Development/NextJS/ecommerce/app/designs/product-details/Desktop.jpg
+} 
+
+.tabContentTags {
+    /* display: flex;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    width: 70%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin-top: 1rem;
+    gap: 1.5rem;
+    width: 75%;
+}
+
+.tabContentTag {
+    width: fit-content;
+}
+
+.iconContainer {
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    border: 1.5px solid var(--disabled);
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+ }
+
+.iconContainer i {
+    color: var(--purple);
+    font-size: 1.5rem;
+ }
+
+ .tabContentTag {
+    align-items: center;
+    display: flex;
+    gap: .85rem;
+ }

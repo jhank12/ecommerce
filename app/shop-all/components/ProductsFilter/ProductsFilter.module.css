@@ -1,0 +1,84 @@
+.productsFilter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterDropdown {
+    border-bottom: 1.5px solid #e7ecf3;
+    padding: 1.75rem 0;
+}
+
+.filterDropdownHeader {
+    align-items: center;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    /* padding: .75rem 0; */
+}
+
+.filterDropdownHeader h4 {
+    font-weight: 500;
+}
+
+.filterDropdownHeader i {
+    color: var(--secondary-font);
+    font-size: 1.25rem;
+}
+
+.dropdownOptions {
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+    margin-top: 1rem;
+}
+
+.dropdownCheckboxContainer {
+    align-items: center;
+    color: var(--primary-font);
+    display: flex;
+    font-size: .95rem;
+    font-weight: 300;
+    gap: .85rem;
+}
+
+.dropdownCheckboxContainer input {
+    border-color: red;
+    width: 18px;
+}
+
+.colorOptionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.starRow {
+    display: flex;
+    gap: .25rem;
+}
+
+.starIconGray, .starIconYellow {
+    font-size: 1.15rem;
+}
+
+.starIconGray {
+    color: #e7ecf3;
+}
+
+.starIconYellow {
+    color: rgb(255, 217, 0);
+}
+
+.clearFiltersBtn {
+    align-self: center;
+    background-color: transparent;
+    color: var(--purple);
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.clearFiltersBtn:hover {
+    color: var(--purple-hover);
+}

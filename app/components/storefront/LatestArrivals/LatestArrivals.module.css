@@ -1,0 +1,17 @@
+/* .latestArrivals {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    justify-content: space-between;
+    padding: 4rem 0;
+    width: 100%;
+} */
+  
+.storefrontHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
