@@ -1,15 +1,10 @@
 "use client";
 
 import React from "react";
-import styles from "./NavBar.module.css";
 
 import Link from "@/node_modules/next/link";
 
-import { useSelector } from "@/node_modules/react-redux/dist/react-redux";
-
 export default function NavBar() {
-  const { cartItems } = useSelector((state) => state);
-
   return (
     <header className="mainHeader">
       <nav>
@@ -22,7 +17,7 @@ export default function NavBar() {
             <Link href="/shop-all">Shop all</Link>
           </li>
           <li>
-            <Link href="#latestArrivals" scroll={true}>
+            <Link href="/#latestArrivals" scroll={true}>
               Latest arrivals
             </Link>
           </li>

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import styles from "./QualitySection.module.css";
 
@@ -9,11 +9,9 @@ import IconContainer from "@/app/components/IconContainer/IconContainer";
 import StorefrontSectionComponent from "@/app/components/storefront/StorefronSectionComponent/StorefrontSectionComponent";
 
 export default function QualitySection() {
-
-  
   const tabs = ["Sustainability", "Comfort", "Durability", "Versatility"];
-  
-  const [ selectedTab, setSelectedTab ] = useState(tabs[0]);
+
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   return (
     <StorefrontSectionComponent>
@@ -28,22 +26,19 @@ export default function QualitySection() {
 
       <div className={styles.tabs}>
         <ul>
-          {tabs.map(tab => {
+          {tabs.map((tab) => {
             return (
-              <li 
-                className={selectedTab === tab ? styles.activeTab : ""} 
+              <li
+                className={selectedTab === tab ? styles.activeTab : ""}
                 onClick={() => setSelectedTab(tab)}
               >
                 {tab}
               </li>
-            )
+            );
           })}
         </ul>
 
         <div className={styles.tabContent}>
-
-          <div className={styles.imgTestDiv}>test</div>
-
           <div className={styles.tabContentText}>
             <h4>{selectedTab}</h4>
             <p className={styles.tabContentTextDesc}>
@@ -54,7 +49,7 @@ export default function QualitySection() {
             <div className={styles.tabContentTags}>
               <div className={styles.tabContentTag}>
                 <IconContainer icon="ri-shield-check-line" />
-               
+
                 <p>Recycled Materials</p>
               </div>
               <div className={styles.tabContentTag}>
@@ -66,7 +61,6 @@ export default function QualitySection() {
                 <p>Carbon Neutral</p>
               </div>
               <div className={styles.tabContentTag}>
-                
                 <IconContainer icon="ri-shield-check-line" />
                 <p>Water Conservation</p>
               </div>
