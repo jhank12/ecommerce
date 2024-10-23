@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect } from "react";
 
 import styles from "./ProductListing.module.css";
@@ -13,7 +14,7 @@ import StorefrontSectionComponent from "@/app/components/storefront/StorefronSec
 import ProductListingColorCircle from "../ProductListingColorCircle/ProductListingColorCircle";
 
 import { useDispatch } from "@/node_modules/react-redux/dist/react-redux";
-import { addToCart, removeFromCart } from "@/redux/slices/cartSlice";
+import { addToCart } from "@/redux/slices/cartSlice";
 
 export default function ProductListing({ productData }) {
   const dispatch = useDispatch();
