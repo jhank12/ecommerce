@@ -2,15 +2,15 @@ import { promises as fs } from "fs";
 
 export default async function getProductData(productId: string) {
   const productsReq = await fs.readFile(
-    process.cwd() + "./app/data/products.json",
+    process.cwd() + "/app/data/products.json",
     "utf-8"
   );
   const inventoryReq = await fs.readFile(
-    process.cwd() + "./app/data/inventory.json",
+    process.cwd() + "/app/data/inventory.json",
     "utf-8"
   );
   const imageReq = await fs.readFile(
-    process.cwd() + "./app/data/product-images.json",
+    process.cwd() + "/app/data/product-images.json",
     "utf-8"
   );
 

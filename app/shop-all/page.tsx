@@ -9,7 +9,7 @@ import styles from "./ShopAll.module.css";
 import getAvailableColors from "../lib/getAvailableColors";
 
 export default async function page({ searchParams }: any) {
-  // const availableColors = await getAvailableColors();
+  const availableColors = await getAvailableColors();
 
   return (
     <div className={styles.allProductsPageGrid}>
