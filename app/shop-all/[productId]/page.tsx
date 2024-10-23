@@ -24,7 +24,9 @@ export default async function ProductPage({ params: { productId } }) {
     <section className="siteContainer">
       <section className="contentSection">
         <div className="contentContainer">
-          <ProductListing productData={productData} />
+          <Suspense>
+            <ProductListing productData={productData} />
+          </Suspense>
 
           <QualitySection />
 

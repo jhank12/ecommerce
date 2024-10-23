@@ -13,7 +13,9 @@ export default async function page({ searchParams }: any) {
 
   return (
     <div className={styles.allProductsPageGrid}>
-      <ProductsFilter availableColors={availableColors} />
+      <Suspense>
+        <ProductsFilter availableColors={availableColors} />
+      </Suspense>
 
       <div className={styles.productListings}>
         <div className={styles.productsGrid}>
