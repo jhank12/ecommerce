@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 
-import styles from "/Users/joshuahankins/Desktop/Web Development/NextJS/ecommerce/app/shop-all/[productId]/components/ProductListing/ProductListing.module.css";
+import styles from "./ProductListing.module.css";
 
 import {
   useRouter,
