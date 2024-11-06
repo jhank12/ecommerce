@@ -11,6 +11,8 @@ import getAvailableColors from "../lib/getAvailableColors";
 export default async function page({ searchParams }: any) {
   const availableColors = await getAvailableColors();
 
+  const sParams = await searchParams;
+
   return (
     <div className={styles.allProductsPageGrid}>
       <Suspense>
@@ -20,7 +22,7 @@ export default async function page({ searchParams }: any) {
       <div className={styles.productListings}>
         <div className={styles.productsGrid}>
           <Suspense fallback={<h1>Loading...</h1>}>
-            <Products searchParams={searchParams} isLink={true} />
+            <Products searchParams={sParams} isLink={true} />
           </Suspense>
         </div>
       </div>
