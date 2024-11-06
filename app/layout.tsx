@@ -1,8 +1,14 @@
 import "./globals.css";
 
+import { Metadata } from "@/node_modules/next/types";
+
 import StoreProvider from "./StoreProvider";
 
 import NavBar from "./components/NavBar/NavBar";
+
+export const metadata: Metadata = {
+  title: "test",
+};
 
 export default function RootLayout({
   children,
